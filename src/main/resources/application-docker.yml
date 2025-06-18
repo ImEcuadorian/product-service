@@ -1,0 +1,12 @@
+spring:
+  r2dbc:
+    url: ${spring-r2dbc-url}
+    username: ${spring-r2dbc-username}
+    password: ${spring-r2dbc-password}
+
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-sources[0]:
+            endpoint: https://e-commerce-vault.vault.azure.net/

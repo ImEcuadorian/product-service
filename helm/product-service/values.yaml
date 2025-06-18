@@ -1,0 +1,17 @@
+replicaCount: 2
+
+image:
+  repository: parkingacr2025.azurecr.io/product-service
+  pullPolicy: Always
+  tag: ""
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+
+namespace: product-service
+
+resources: { }
